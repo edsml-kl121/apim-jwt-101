@@ -32,7 +32,7 @@ Create an app registration:
 
 ![alt text](image-2.png)
 
-Copy the client_id, tenant_id and create a secret value and populate `.env`
+Copy the `client_id`, `tenant_id` and create a secret value and populate `.env`
 
 ---
 
@@ -46,7 +46,7 @@ Please expose the API:
 
 ### 5. Update the Manifest
 
-Please change "accessTokenAcceptedVersion" to 2
+Please change `"accessTokenAcceptedVersion"` to `2`
 
 ![alt text](image-4.png)
 
@@ -105,8 +105,24 @@ Now go back to APIM and replace the policies with
 
 ---
 
+### 8. Generate a Token and Test
+
+Please run `bash token_generation.sh`. It should generate a token for you.
+
+![alt text](image-5.png)
+
+You can use this token and add `Authorization` header with `Bearer <your token>`.
+
+![alt text](image-6.png)
+
+End result:
+
+![alt text](image-7.png)
+
+---
+
 ## Further Reading
 
 - See more advanced tutorial at: https://www.youtube.com/watch?v=0gSHAlvjw38
 - Try these labs: https://github.com/Azure/apim-lab
-# apim-jwt-101
+
